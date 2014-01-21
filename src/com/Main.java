@@ -9,5 +9,7 @@ public class Main {
         Game game = new Game(new AI("John"), new AI("Bob"));
         game.play();
 
+        // 2 hours
+
     }
 }

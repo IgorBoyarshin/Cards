@@ -12,8 +12,21 @@ public abstract class Player {
 
     public abstract Vector<Card> makeMove();
 
-    public Vector<Card> receiveMove(Vector<Card> opponentMove) {
+    public void receiveCard(Card card) {
+        cards.add(card);
+    }
 
+    public void receiveCards(Vector<Card> cards) {
+        for (int i = 0; i < cards.size(); i++) {
+            this.cards.add(cards.get(i));
+        }
+    }
+
+    public Vector<Card> receiveMove(Vector<Card> opponentMove) {
+        Vector<Card> move = new Vector<Card>();
+        move.add(cards.get(0));
+
+        return move;
     }
 
     public String getName() {
@@ -26,5 +39,6 @@ public abstract class Player {
 
     public Player(String name) {
         this.name = name;
+        cards = new Vector<Card>();
     }
 }

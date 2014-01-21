@@ -18,6 +18,9 @@ public class Game {
 
     public void play() {
         int counter = 0;
+
+
+
         while (!isGameEnded()) {
             counter++;
 
@@ -28,6 +31,10 @@ public class Game {
             Vector<Card> opponentPlayerMove = opponentPlayer.receiveMove(currentPlayerMove);
             System.out.print(counter + "| ");
             printMove(opponentPlayerMove);
+
+            Player temp = currentPlayer;
+            currentPlayer = opponentPlayer;
+            opponentPlayer = currentPlayer;
         }
     }
 

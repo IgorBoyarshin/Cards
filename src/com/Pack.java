@@ -13,6 +13,7 @@ public class Pack {
     private final int trump;
 
     public Pack() {
+        pack = new Vector<Card>();
         prepareCards();
 
         trump = pack.get(0).getSuit();
@@ -85,7 +86,7 @@ public class Pack {
     public void listAllCards() {
         for (int i = 0; i < pack.size(); i++) {
             Card card = pack.get(i);
-            System.out.println(card.getTypeChar() + card.getSuitChar());
+            System.out.println(card.getCardString());
         }
     }
 }
