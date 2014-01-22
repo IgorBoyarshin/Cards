@@ -49,9 +49,12 @@ public class Game {
 
             passCards();
 
-            Player temp = currentPlayer;
-            currentPlayer = opponentPlayer;
-            opponentPlayer = temp;
+            // If a player took cards, then don't change players
+            if (currentPlayerMove.size() == opponentPlayerMove.size()) {
+                Player temp = currentPlayer;
+                currentPlayer = opponentPlayer;
+                opponentPlayer = temp;
+            }
         }
 
         if (first.getAmountOfCards() == 0) {
