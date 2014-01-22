@@ -1,4 +1,7 @@
-package com;
+package com.players;
+
+import com.Card;
+import com.Game;
 
 import java.util.Vector;
 
@@ -8,25 +11,21 @@ import java.util.Vector;
 public abstract class Player {
 
     private final String name;
-    private Vector<Card> cards;
+    protected Vector<Card> cards;
+    protected final int trump;
 
-    public abstract Vector<Card> makeMove();
+    public abstract Vector<Card> makeMove(Vector<Card> opponentMove);
 
     public void receiveCard(Card card) {
-        cards.add(card);
+        if (card != null) {
+            cards.add(card);
+        }
     }
 
     public void receiveCards(Vector<Card> cards) {
         for (int i = 0; i < cards.size(); i++) {
             this.cards.add(cards.get(i));
         }
-    }
-
-    public Vector<Card> receiveMove(Vector<Card> opponentMove) {
-        Vector<Card> move = new Vector<Card>();
-        move.add(cards.get(0));
-
-        return move;
     }
 
     public String getName() {
@@ -37,8 +36,9 @@ public abstract class Player {
         return cards.size();
     }
 
-    public Player(String name) {
+    public Player(String name, int trump) {
         this.name = name;
+        this.trump = trump;
         cards = new Vector<Card>();
     }
 }

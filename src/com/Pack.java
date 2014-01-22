@@ -17,18 +17,15 @@ public class Pack {
         prepareCards();
 
         trump = pack.get(0).getSuit();
-
     }
 
     public Card getNextCard() {
-        Card card;
+        Card card = null;
 
         if (pack.size() != 0) {
             int top = pack.size() - 1;
             card = pack.get(top);
             pack.remove(top);
-        } else {
-            card = new Card(-1, -1);
         }
 
         return card;
