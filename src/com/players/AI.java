@@ -23,9 +23,9 @@ public class AI extends Player {
 
                 if (card == null) {
                     take.add(opponentMove.get(i));
+                } else {
+                    move.add(card);
                 }
-
-                move.add(card);
             }
 
             if (take.size() != 0) {
@@ -56,12 +56,18 @@ public class AI extends Player {
     // TODO: change this func
     private Card findCardThatBeatsIt(Card card) {
         Card move = null;
+        int num = -1;
 
         for (int i = 0; i < cards.size(); i++) {
             if (((cards.get(i).getType() > card.getType()) && (cards.get(i).getSuit() == card.getSuit()))
                     || ((cards.get(i).getSuit() == trump) && (card.getSuit() != trump))) {
                 move = cards.get(i);
+                num = i;
             }
+        }
+
+        if (num != -1) {
+            cards.remove(num);
         }
 
         return move;

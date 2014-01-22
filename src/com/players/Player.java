@@ -16,6 +16,13 @@ public abstract class Player {
 
     public abstract Vector<Card> makeMove(Vector<Card> opponentMove);
 
+    public void listCards() {
+        for (int i=0; i<cards.size(); i++) {
+            System.out.print(cards.get(i).getCardString() + " ");
+        }
+        System.out.println();
+    }
+
     public void receiveCard(Card card) {
         if (card != null) {
             cards.add(card);

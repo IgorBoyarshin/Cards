@@ -31,6 +31,12 @@ public class Game {
         System.out.println("Trump: " + pack.getTrump() + ";");
 
         while (!isGameEnded()) {
+            System.out.println("Pack: " + pack.getCardAmount());
+            System.out.print(currentPlayer.getName() + ": ");
+            currentPlayer.listCards();
+            System.out.print(opponentPlayer.getName() + ": ");
+            opponentPlayer.listCards();
+
             counter++;
 
             Vector<Card> currentPlayerMove = currentPlayer.makeMove(null);
@@ -48,11 +54,17 @@ public class Game {
             opponentPlayer = temp;
         }
 
-        System.out.println("Game ended!");
+        if (first.getAmountOfCards() == 0) {
+            System.out.println("Game ended! " + first.getName() + " won!");
+        } else {
+            System.out.println("Game ended! " + second.getName() + " won!");
+        }
+
+
     }
 
     private void passCards() {
-        while (currentPlayer.getAmountOfCards() < opponentPlayer.getAmountOfCards()) {
+        while ((pack.getCardAmount() > 0)&&(currentPlayer.getAmountOfCards() < opponentPlayer.getAmountOfCards())) {
             currentPlayer.receiveCard(pack.getNextCard());
         }
 
@@ -66,7 +78,7 @@ public class Game {
         System.out.print(name + ": ");
 
         if (move.size() == 0) {
-            System.out.println("Takes");
+            System.out.print("Takes");
         } else {
             for (int i = 0; i < move.size(); i++) {
                 if (move.get(i) == null) {

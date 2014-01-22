@@ -16,7 +16,7 @@ public class Pack {
         pack = new Vector<Card>();
         prepareCards();
 
-        listAllCards();
+        //listAllCards();
 
         trump = pack.get(0).getSuit();
     }
@@ -55,7 +55,7 @@ public class Pack {
         Random random = new Random();
 
         // Generating a random sequence
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 50; i++) {
             int cardType1 = Math.abs(random.nextInt()) % Card.TYPE_AMOUNT;
             int cardSuit1 = Math.abs(random.nextInt()) % Card.SUIT_AMOUNT;
             int cardType2 = Math.abs(random.nextInt()) % Card.TYPE_AMOUNT;
