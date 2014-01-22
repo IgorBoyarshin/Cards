@@ -16,6 +16,8 @@ public class Pack {
         pack = new Vector<Card>();
         prepareCards();
 
+        listAllCards();
+
         trump = pack.get(0).getSuit();
     }
 
@@ -54,10 +56,10 @@ public class Pack {
 
         // Generating a random sequence
         for (int i = 0; i < 30; i++) {
-            int cardType1 = random.nextInt() % Card.TYPE_AMOUNT;
-            int cardSuit1 = random.nextInt() % Card.SUIT_AMOUNT;
-            int cardType2 = random.nextInt() % Card.TYPE_AMOUNT;
-            int cardSuit2 = random.nextInt() % Card.SUIT_AMOUNT;
+            int cardType1 = Math.abs(random.nextInt()) % Card.TYPE_AMOUNT;
+            int cardSuit1 = Math.abs(random.nextInt()) % Card.SUIT_AMOUNT;
+            int cardType2 = Math.abs(random.nextInt()) % Card.TYPE_AMOUNT;
+            int cardSuit2 = Math.abs(random.nextInt()) % Card.SUIT_AMOUNT;
 
             System.out.println(cardType1 + "  " + cardSuit1 + "::" + cardType2 + "  " + cardSuit2);
 
@@ -67,8 +69,8 @@ public class Pack {
             cards[cardType1][cardSuit1][0] = cards[cardType2][cardSuit2][0];
             cards[cardType1][cardSuit1][1] = cards[cardType2][cardSuit2][1];
 
-            cards[cardType1][cardSuit2][0] = type;
-            cards[cardType1][cardSuit2][1] = suit;
+            cards[cardType2][cardSuit2][0] = type;
+            cards[cardType2][cardSuit2][1] = suit;
         }
 
         // Initialising real cards with the sequence

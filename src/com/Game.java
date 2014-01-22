@@ -26,22 +26,20 @@ public class Game {
     private void play() {
         int counter = 0;
 
-        System.out.println("Before passing: " + pack.getCardAmount());
-
         passCards();
 
-        System.out.println("After passing: " + pack.getCardAmount());
+        System.out.println("Trump: " + pack.getTrump() + ";");
 
         while (!isGameEnded()) {
             counter++;
 
             Vector<Card> currentPlayerMove = currentPlayer.makeMove(null);
             System.out.print(counter + "| ");
-            printMove(currentPlayerMove);
+            printMove(currentPlayer.getName(), currentPlayerMove);
 
             Vector<Card> opponentPlayerMove = opponentPlayer.makeMove(currentPlayerMove);
             System.out.print(counter + "| ");
-            printMove(opponentPlayerMove);
+            printMove(opponentPlayer.getName(), opponentPlayerMove);
 
             passCards();
 
@@ -49,6 +47,8 @@ public class Game {
             currentPlayer = opponentPlayer;
             opponentPlayer = temp;
         }
+
+        System.out.println("Game ended!");
     }
 
     private void passCards() {
@@ -62,8 +62,8 @@ public class Game {
         }
     }
 
-    private void printMove(Vector<Card> move) {
-        System.out.print(currentPlayer.getName() + ": ");
+    private void printMove(String name, Vector<Card> move) {
+        System.out.print(name + ": ");
 
         if (move.size() == 0) {
             System.out.println("Takes");
@@ -119,6 +119,9 @@ public class Game {
                     second = new Human(secondName, pack.getTrump());
                     break;
             }
+
+            currentPlayer = first;
+            opponentPlayer = second;
 
             play();
         }

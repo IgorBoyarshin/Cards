@@ -26,15 +26,15 @@ public class Card {
     public static final String TYPE_K = "K";
     public static final String TYPE_T = "T";
 
-    public static final int TYPE_6_NUM = 6;
-    public static final int TYPE_7_NUM = 7;
-    public static final int TYPE_8_NUM = 8;
-    public static final int TYPE_9_NUM = 9;
-    public static final int TYPE_10_NUM = 10;
-    public static final int TYPE_V_NUM = 11;
-    public static final int TYPE_D_NUM = 12;
-    public static final int TYPE_K_NUM = 13;
-    public static final int TYPE_T_NUM = 14;
+    public static final int TYPE_6_NUM = 0;
+    public static final int TYPE_7_NUM = 1;
+    public static final int TYPE_8_NUM = 2;
+    public static final int TYPE_9_NUM = 3;
+    public static final int TYPE_10_NUM = 4;
+    public static final int TYPE_V_NUM = 5;
+    public static final int TYPE_D_NUM = 6;
+    public static final int TYPE_K_NUM = 7;
+    public static final int TYPE_T_NUM = 8;
 
     private final int suit;
     private final int type;
