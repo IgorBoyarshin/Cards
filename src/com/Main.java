@@ -10,7 +10,7 @@ public class Main {
 
         Game game = new Game(Game.PLAYER_AI, "John", Game.PLAYER_AI, "Bob");
 
-        // 2 hours
+        // 3,5 hours
 
     }
 }

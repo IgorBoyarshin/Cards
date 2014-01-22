@@ -64,10 +64,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+            <state line="12" column="14" selection-start="236" selection-end="236" vertical-scroll-proportion="0.5012285" vertical-offset="0" max-vertical-offset="407">
               <folding />
             </state>
           </provider>
@@ -97,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AI.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/players/AI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="80" selection-start="851" selection-end="851" vertical-scroll-proportion="-0.33415234" vertical-offset="680" max-vertical-offset="1343">
+            <state line="50" column="26" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1343">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#255#261#0" expanded="true" />
@@ -157,12 +157,12 @@
         <option value="$PROJECT_DIR$/src/com/AI.java" />
         <option value="$PROJECT_DIR$/src/com/Player.java" />
         <option value="$PROJECT_DIR$/src/com/players/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/players/Human.java" />
         <option value="$PROJECT_DIR$/src/com/players/AI.java" />
         <option value="$PROJECT_DIR$/src/com/Card.java" />
         <option value="$PROJECT_DIR$/src/com/Pack.java" />
         <option value="$PROJECT_DIR$/src/com/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/Main.java" />
       </list>
     </option>
   </component>
@@ -443,7 +443,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -462,7 +462,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14860907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3213166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3213166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -564,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="42" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="331" max-vertical-offset="2074">
@@ -610,12 +603,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/players/AI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="80" selection-start="851" selection-end="851" vertical-scroll-proportion="-0.33415234" vertical-offset="680" max-vertical-offset="1343">
+        <state line="50" column="26" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1343">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#255#261#0" expanded="true" />
             <element signature="e#303#309#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="236" selection-end="236" vertical-scroll-proportion="0.5012285" vertical-offset="0" max-vertical-offset="407">
+          <folding />
         </state>
       </provider>
     </entry>
